@@ -1,0 +1,23 @@
+'''
+Ingrese nombre del empleado, hora y minutos de tranajo y el 
+costo de hora, para hallar el importe a pagar
+'''
+
+#int (integer) entero
+#float(flotante) decimal
+print ('----------------------------------------')
+print('CALCULO DE HORAS TRANAJADAS')
+print('----------------------------------------')
+xnom = input('ingresar nombre de trabajador:')
+xhoras = int(input('ingresar horas trabajadas:'))
+xmin = int(input('ingrese minutos trbajados:'))
+xcosto = input('ingrese costo por hora:')
+
+#calcular
+total  = xcosto * xhoras + (xcosto/60)*xmin
+
+print('R E S U L T A D O S')
+print('Trabajador : ', xnom)
+print('Horas de trabajadas : ', xhoras)
+print('Minutos trabajados : ', xmin)
+print('Total a pagar es : ', (int(total*100))/100)
